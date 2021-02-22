@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+    <servlet>
+        <description/>
+        <display-name>LoginServlet</display-name>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>kz.iitu.cookie.servlet.cookie.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description/>
+        <display-name>ProfileServlet</display-name>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>kz.iitu.cookie.servlet.cookie.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description/>
+        <display-name>LogoutServlet</display-name>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>kz.iitu.cookie.servlet.cookie.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+<!--   Hidden Form  -&#45;&#45;-->
+    <servlet>
+        <servlet-name>s1</servlet-name>
+        <servlet-class>kz.iitu.cookie.servlet.hiddenform.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>kz.iitu.cookie.servlet.hiddenform.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+
+<!--  URL Rewriting  -&#45;&#45;&#45;&#45;-->
+
+    <servlet>
+        <servlet-name>ss1</servlet-name>
+        <servlet-class>kz.iitu.cookie.servlet.urlrewriting.FirstServletUrl</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ss1</servlet-name>
+        <url-pattern>/servlet3</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ss2</servlet-name>
+        <servlet-class>kz.iitu.cookie.servlet.urlrewriting.SecondServletUrl</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ss2</servlet-name>
+        <url-pattern>/servlet4</url-pattern>
+    </servlet-mapping>
+
+
+<!--  Http Session   &#45;&#45;-->
+
+    <servlet>
+        <description></description>
+        <display-name>LoginServlet</display-name>
+        <servlet-name>LoginServletHttp</servlet-name>
+        <servlet-class>kz.iitu.cookie.servlet.httpsession.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServletHttp</servlet-name>
+        <url-pattern>/LoginServletHttp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description></description>
+        <display-name>ProfileServletHttp</display-name>
+        <servlet-name>ProfileServletHttp</servlet-name>
+        <servlet-class>kz.iitu.cookie.servlet.httpsession.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServletHttp</servlet-name>
+        <url-pattern>/ProfileServletHttp</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>LogoutServletHttp</display-name>
+        <servlet-name>LogoutServletHttp</servlet-name>
+        <servlet-class>kz.iitu.cookie.servlet.httpsession.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServletHttp</servlet-name>
+        <url-pattern>/LogoutServletHttp</url-pattern>
+    </servlet-mapping>
+</web-app>
